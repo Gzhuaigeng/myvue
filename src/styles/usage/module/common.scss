@@ -1,0 +1,119 @@
+$base-color: #0dc441;
+
+@font-face {
+  font-family: "yofont";
+  src: url('/images/fonts/iconheader.eot?t=1482995686824'); /* IE9*/
+  src: url('/images/fonts/iconheader.eot?t=1482995686824#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/images/fonts/iconheader.woff?t=1482995686824') format('woff'), /* chrome, firefox */
+  url('/images/fonts/iconheader.ttf?t=1482995686824') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('/images/fonts/iconheader.svg?t=1482995686824#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: 'yofont';
+  src: url('/images/fonts/iconfooter.eot');
+  src: url('/images/fonts/iconfooter.eot?#iefix') format('embedded-opentype'),
+  url('/images/fonts/iconfooter.woff') format('woff'),
+  url('/images/fonts/iconfooter.ttf') format('truetype'),
+  url('/images/fonts/iconfooter.svg#iconfont') format('svg');
+}
+
+@font-face {
+  font-family: 'yofont';
+  src: url('/images/fonts/iconfont-back.eot');
+  src: url('/images/fonts/iconfont-back.eot?#iefix') format('embedded-opentype'),
+  url('/images/fonts/iconfont-back.woff') format('woff'),
+  url('/images/fonts/iconfont-back.ttf') format('truetype'),
+  url('/images/fonts/iconfont-back.svg#iconfont') format('svg');
+}
+
+@font-face {font-family: "yofont";
+  src: url('/images/fonts/iconfont.eot?t=1483243221793'); /* IE9*/
+  src: url('/images/fonts/iconfont.eot?t=1483243221793#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/images/fonts/iconfont.woff?t=1483243221793') format('woff'), /* chrome, firefox */
+  url('/images/fonts/iconfont.ttf?t=1483243221793') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('/images/fonts/iconfont.svg?t=1483243221793#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {font-family: "yofont";
+  src: url('/images/fonts/login.eot?t=1483243221793'); /* IE9*/
+  src: url('/images/fonts/login.eot?t=1483243221793#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/images/fonts/login.woff?t=1483243221793') format('woff'), /* chrome, firefox */
+  url('/images/fonts/login.ttf?t=1483243221793') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('/images/fonts/login.svg?t=1483243221793#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {font-family: "yofont";
+  src: url('/images/fonts/fx.eot?t=1483243221793'); /* IE9*/
+  src: url('/images/fonts/fx.eot?t=1483243221793#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/images/fonts/fx.woff?t=1483243221793') format('woff'), /* chrome, firefox */
+  url('/images/fonts/fx.ttf?t=1483243221793') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('/images/fonts/fx.svg?t=1483243221793#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+
+
+%header {
+  header {
+    height: .6rem;
+    background: #a80d0b;
+    ul {
+      @include flexbox();
+      height: 100%;
+      li:first-child{
+        height: 100%;
+        line-height: .6rem;
+        font-size:.2rem;
+        text-align: center;
+        color: #ffffff;
+        padding-left:.1rem;
+      }
+      li:last-child {
+        height: 100%;
+        line-height: .6rem;
+        font-size:.14rem;
+        text-align: center;
+        color: #ffffff;
+        padding-right:.1rem;
+      }
+      li:nth-child(2) {
+        @include flex();
+        @include flexbox();
+        @include justify-content();
+        @include align-items();
+        span {
+          display: inline-block;
+          width: .59rem;
+          height: .25rem;
+          text-align: center;
+          line-height: .25rem;
+          color: rgba(255, 255, 255, 0.6);
+          background: rgba(100, 217, 133, 0.6);
+          &:first-child {
+            border-radius: .1rem 0 0 .1rem;
+          }
+          &:last-child {
+            border-radius: 0 .1rem .1rem 0;
+          }
+          &.active {
+            background: #64d985;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+%section{
+    section{
+        @include flex();
+        @include flexbox();
+        @include justify-content(center);
+        @include align-items(center);
+        width:100%;
+        p{
+            color:#6b6b6b;
+        }
+    }
+}
